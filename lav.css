@@ -1,0 +1,90 @@
+/* https://s9a.page/tape */
+:root{--tape-filter:none;--tape-bluv:#11dff1;--tape-play:#fbbfff;--tape-loud:#eee833;--tape-luvu:#44f477;--tape-blaq:#0e0e0e;--tape-watt:#e0e0e0;--tape-hex:#e0e0e0;--tape-mix:transparent}.tape-watt{--tape-hex:var(--tape-watt)}.tape-luvu{--tape-hex:var(--tape-luvu)}.tape-loud{--tape-hex:var(--tape-loud)}.tape-play{--tape-hex:var(--tape-play)}.tape-bluv{--tape-hex:var(--tape-bluv)}.tape-flat{border-color:transparent}.tape-flap{border-color:currentColor}.tape-flow{--tape-remix:none}.tape-flow :not(.tape-skip){background-color:transparent;color:inherit}.tape-blaq,.tape-bluv,.tape-loud,.tape-luvu,.tape-play,.tape-watt{--tape-mix:var(--tape-hex);--tape-remix:none;color:var(--tape-blaq)!important;background-color:var(--tape-mix)!important;background-image:var(--tape-remix);filter:var(--tape-filter)}.tape-blaq{--tape-mix:var(--tape-blaq);color:var(--tape-hex)!important}.tape-erase,.tape-erase *{color:transparent!important}
+
+:focus {
+  outline: thick groove;
+}
+
+::selection {
+  color: var(--tape-blaq);
+  background: var(--tape-luvu);
+}
+
+:root {
+  --tape-watt: lemonchiffon;
+  --tape-blaq: #518;
+  --tape-loud: #ed3;
+}
+
+html {
+  font-family: fantasy;
+  font-size: max(2em, 8vmax);
+  line-height: 1.618;
+}
+
+body {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.mosh {
+  align-items: center;
+  justify-items: center;
+  display: flex;
+  flex-basis: 100%;
+  flex-flow: wrap;
+  margin: auto;
+}
+
+div {
+  align-items: center;
+  justify-items: center;
+  display: flex;
+  flex-basis: 100%;
+  font-weight: 600;
+  margin: 0;
+  width: 100%;
+  text-indent: 1em;
+  min-height: 100vh;
+}
+
+@media (orientation: portrait) {
+  div {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+  }
+}
+ 
+h1 {
+  all: unset;
+}
+
+.surf {
+  transform: rotate(180deg);
+}
+
+i {
+  text-decoration: none;
+  text-shadow:
+    1vw -1vh 0,
+    2vw -2vh 0,
+    3vw -3vh 0,
+    -1vw -5vh 0,
+    -2vw -8vh 0,
+    -3vw -13vh 0,
+    -5vw -21vh 0;
+}
+
+b {
+  text-shadow:
+    3vw -2vh 1vmax,
+    2vw -3vh 1vmax,
+    1vw -5vh 1vmax,
+    1vw -3vh 1vmax,
+    2vw -5vh 1vmax,
+    3vw -5vh 1vmax,
+    1vw -2vh 1vmax,
+    2vw -2vh 1vmax,
+    3vw -3vh 1vmax,
+    5vw -5vh 1vmax;
+}
