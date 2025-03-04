@@ -1,0 +1,72 @@
+html {
+  font-family: fantasy;
+  font-size: max(2em, 8vmax);
+  line-height: 1.618;
+}
+
+body {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.mosh {
+  align-items: center;
+  justify-items: center;
+  display: flex;
+  flex-basis: 100%;
+  flex-flow: wrap;
+  margin: auto;
+}
+
+div {
+  align-items: center;
+  justify-items: center;
+  display: flex;
+  flex-basis: 100%;
+  font-weight: 600;
+  margin: 0;
+  width: 100%;
+  text-indent: 1em;
+  min-height: 100vh;
+}
+
+@media (orientation: portrait) {
+  div {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+  }
+}
+ 
+h1 {
+  all: unset;
+}
+
+.surf {
+  transform: rotate(180deg);
+}
+
+i {
+  text-decoration: none;
+  text-shadow:
+    1vw -1vh 0,
+    2vw -2vh 0,
+    3vw -3vh 0,
+    -1vw -5vh 0,
+    -2vw -8vh 0,
+    -3vw -13vh 0,
+    -5vw -21vh 0;
+}
+
+b {
+  text-shadow:
+    3vw -2vh 1vmax,
+    2vw -3vh 1vmax,
+    1vw -5vh 1vmax,
+    1vw -3vh 1vmax,
+    2vw -5vh 1vmax,
+    3vw -5vh 1vmax,
+    1vw -2vh 1vmax,
+    2vw -2vh 1vmax,
+    3vw -3vh 1vmax,
+    5vw -5vh 1vmax;
+}
